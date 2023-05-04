@@ -1,0 +1,1 @@
+# typescript_projeto_inicial
