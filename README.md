@@ -19,3 +19,19 @@ npm install typescript@4.2.2 --save-dev
 # Compilando o typescript para o javascript;
 
 npm run compile
+
+# Incluindo parametro package.json autocompiler
+
+"watch":"tsc -w"
+
+# Incluindo parametro tsconfig.json para nao compilar quando houver erro
+
+"noEmitOnError": true
+
+# Executando autocompiler
+
+npm run watch
+
+# Executando o server e o watch com autocompilador typescript
+
+npm run start
