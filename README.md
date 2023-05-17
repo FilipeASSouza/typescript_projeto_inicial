@@ -35,3 +35,7 @@ npm run watch
 # Executando o server e o watch com autocompilador typescript
 
 npm run start
+
+# Deve ser criado o arquivo tsconfig.json para autocompiler leia as propriedades
+
+# Os arquivos compilados vao ser enviados para a pasta dist
