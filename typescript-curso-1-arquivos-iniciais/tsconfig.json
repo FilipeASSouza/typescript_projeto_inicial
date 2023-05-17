@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
         "outDir": "dist/js",//configura compilação na pasta
-        "target": "ES6"//versao do java script
+        "target": "ES6",//versao do java script
+        "noEmitOnError": true //nao gera um arquivo js enquanto estiver com problema
     },
     "include": ["app/**/*"]
 }
