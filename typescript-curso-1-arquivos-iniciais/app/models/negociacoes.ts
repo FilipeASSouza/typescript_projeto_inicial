@@ -4,7 +4,7 @@ export class Negociacoes{
     private negociacoes:Array<Negociacao> = [];
     //private negociacoes: Negociacao[]; também é um array
     
-    adiciona(negociacao:Negociacao){
+    public adiciona(negociacao:Negociacao){
         this.negociacoes.push(negociacao);
     }
 
@@ -13,7 +13,7 @@ export class Negociacoes{
         return [...this.negociacoes];//utilizando expred operator, pega cada item individual e coloca na nova lista
     }*/
 
-    lista() :ReadonlyArray<Negociacao> {//mesma coisa do ReadonlyArray
+    public lista() :ReadonlyArray<Negociacao> {//mesma coisa do ReadonlyArray
         return this.negociacoes;
     }
 }
