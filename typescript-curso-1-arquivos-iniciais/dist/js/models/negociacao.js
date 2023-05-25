@@ -1,12 +1,11 @@
 export class Negociacao {
-    //simplificando construtor
     constructor(_data, quantidade, valor) {
         this._data = _data;
         this.quantidade = quantidade;
         this.valor = valor;
     }
     static criaDe(dataString, quantidadeString, valorString) {
-        const exp = /-/g; //expressao regular
+        const exp = /-/g;
         const date = new Date(dataString.replace(exp, ','));
         const quantidade = parseInt(quantidadeString);
         const valor = parseFloat(valorString);
