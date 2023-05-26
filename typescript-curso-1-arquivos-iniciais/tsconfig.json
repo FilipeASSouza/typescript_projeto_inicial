@@ -5,7 +5,8 @@
         "noEmitOnError": true, //nao gera um arquivo js enquanto estiver com problema
         "noImplicitAny": true,
         "removeComments": true,
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "experimentalDecorators": true
     },
     "include": ["app/**/*"]
 }
