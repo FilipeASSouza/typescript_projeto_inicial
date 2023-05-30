@@ -57,4 +57,26 @@ export class NegociacaoController{
         this.negociacoesView.update(this.negociacoes);
         this.mensagemView.update('Negociacao adicionada com sucesso!!');
     }
+
+    public importaDados():void{
+        fetch('http://localhost:8080/dados')
+            .then(res => {
+                return res.json();
+            })
+            .then((dados: any[]) => {
+                return dados.map(dado => {
+                    return new Negociacao( 
+                        new Date(), 
+                        dado.vezes, 
+                        dado.montante
+                        )
+                })
+            })
+            .then(negociacoesDeHoje => {
+                for(let negociacao of negociacoesDeHoje){
+                    this.negociacoes.adiciona(negociacao);
+                }
+                this.negociacoesView.update(this.negociacoes);
+            });
+    }
 }
