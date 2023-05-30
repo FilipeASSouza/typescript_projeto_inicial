@@ -1,3 +1,4 @@
+import { inspect } from "../decorators/inspect.js";
 import { logarTempoDeExecucao } from "../decorators/logar-tempo-execucao.js";
 import { DiaDaSemana } from "../enum/diasDaSemana.js";
 import { Negociacao } from "../models/negociacao.js";
@@ -20,6 +21,7 @@ export class NegociacaoController{
         this.negociacoesView.update(this.negociacoes);
     }
 
+    @inspect
     @logarTempoDeExecucao(true)
     public adiciona():void{
         
