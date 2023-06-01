@@ -1,6 +1,6 @@
 import { Imprimivel } from "../utils/imprimivel.js";
 
-export class Negociacao extends Imprimivel{
+export class Negociacao implements Imprimivel{
 
     public static criaDe(dataString :string, quantidadeString :string, valorString :string):Negociacao{
         const exp = /-/g; //expressao regular
@@ -23,9 +23,7 @@ export class Negociacao extends Imprimivel{
         private _data: Date,
         readonly quantidade: number,
         readonly valor: number
-        ){
-            super();
-        }
+        ){}
 
     get data():Date{
         const data = new Date(this._data.getTime());
