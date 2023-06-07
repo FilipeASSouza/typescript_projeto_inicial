@@ -48,4 +48,4 @@ Ctrl + Shift + C
 
 # Abrindo o depurador do código após abrir o console:
 
-Ctrl + Shift + P
+Ctrl + P
