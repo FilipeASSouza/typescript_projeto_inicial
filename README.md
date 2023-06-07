@@ -39,3 +39,13 @@ npm run start
 # Deve ser criado o arquivo tsconfig.json para autocompiler leia as propriedades
 
 # Os arquivos compilados vao ser enviados para a pasta dist
+
+# Comandos no navegador
+
+# Abrindo Console:
+
+Ctrl + Shift + C
+
+# Abrindo o depurador do código após abrir o console:
+
+Ctrl + Shift + P
