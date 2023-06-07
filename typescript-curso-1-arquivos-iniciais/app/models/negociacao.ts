@@ -1,6 +1,7 @@
+import { Comparavel } from "../interfaces/comparavel.js";
 import { Imprimivel } from "../utils/imprimivel.js";
 
-export class Negociacao implements Imprimivel{
+export class Negociacao implements Imprimivel, Comparavel<Negociacao>{
 
     public static criaDe(dataString :string, quantidadeString :string, valorString :string):Negociacao{
         const exp = /-/g; //expressao regular
